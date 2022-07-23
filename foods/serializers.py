@@ -11,9 +11,7 @@ class FoodSerializer(serializers.ModelSerializer):
     class Meta:
         model = Food
         fields = (
-            "id",
             "internal_code",
-            "is_publish",
             "code",
             "name_ru",
             "description_ru",
