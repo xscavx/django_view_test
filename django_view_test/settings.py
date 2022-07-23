@@ -31,13 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "foods.apps.FoodsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "foods.apps.FoodsConfig",
 ]
 
 MIDDLEWARE = [
@@ -77,9 +78,9 @@ WSGI_APPLICATION = "django_view_test.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "foods-vew",
-        "USER": "foods-vew",
-        "PASSWORD": "foods-vew",
+        "NAME": "foods-view",
+        "USER": "foods-view",
+        "PASSWORD": "foods-view",
         "HOST": "127.0.0.1",
         "PORT": "5432",
     }

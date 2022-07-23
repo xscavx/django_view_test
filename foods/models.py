@@ -24,7 +24,7 @@ class FoodCategory(TimeStampedModel):
     order_id = models.SmallIntegerField(default=10, blank=True, null=True)
 
     def __str__(self):
-        return f'[{self.pk}] "{self.name_ru}"'
+        return self.name_ru
 
     class Meta:
         verbose_name = "Раздел меню"
@@ -74,7 +74,7 @@ class Food(TimeStampedModel):
     )
 
     def __str__(self):
-        return f'[{self.pk}] "{self.name_ru}"'
+        return self.name_ru
 
     class Meta:
         verbose_name = "Блюдо"
